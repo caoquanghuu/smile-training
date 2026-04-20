@@ -1,0 +1,427 @@
+{
+  "meta": {
+    "title": "Smile FO Training for Front Office",
+    "subtitle": "Lộ trình hướng dẫn và thực hành theo bài học nghiệp vụ lễ tân Smile FO",
+    "timeline": "8 buổi x 90 phút"
+  },
+  "modules": [
+    {
+      "id": "tong-quan-he-thong",
+      "name": "Bài 1: Tổng quan Smile FO và quy trình ca",
+      "summary": "Làm quen giao diện, quyền người dùng và luồng vận hành một ca lễ tân từ đầu ca đến bàn giao.",
+      "duration": "Buổi 1",
+      "outcomes": [
+        "Hiểu luồng xử lý nghiệp vụ Front Office trên Smile FO",
+        "Định vị đúng các khu vực quan trọng trên dashboard",
+        "Thực hiện quy trình mở ca và đóng ca đúng checklist"
+      ],
+      "guideSteps": [
+        {
+          "title": "Đăng nhập và kiểm tra quyền",
+          "detail": "Thao tác: 1) Mở màn hình đăng nhập Smile FO. 2) Nhập User/Password theo ca trực. 3) Vào menu Hệ thống > Thông tin người dùng để kiểm tra vai trò Lễ tân/Thu ngân/Trưởng ca. 4) Mở Nhật ký đăng nhập để đối chiếu tài khoản đang sử dụng.",
+          "tips": "Không dùng chung tài khoản để tránh sai lệch lịch sử thao tác"
+        },
+        {
+          "title": "Đọc dashboard vận hành",
+          "detail": "Thao tác: 1) Vào Front Office > Dashboard. 2) Chọn ngày làm việc tại bộ lọc ngày ở góc trên. 3) Mở widget Arrival/Departure để xem khách sắp đến-sắp đi. 4) Bấm Sơ đồ phòng (Room Rack) để mở danh sách phòng. 5) Tại bộ lọc Tầng, chọn tầng 1, tầng 2 hoặc tất cả tầng để lọc phòng theo khu vực.",
+          "tips": "Luôn mở bộ lọc theo ngày và theo ca để nhìn dữ liệu đúng ngữ cảnh"
+        },
+        {
+          "title": "Mở ca và chốt ca",
+          "detail": "Thao tác: 1) Vào Thu ngân > Mở ca. 2) Nhập số dư đầu ca và ghi chú nguồn tiền. 3) Trong ca, cập nhật sổ quỹ và sự kiện vào Sổ giao ca. 4) Cuối ca vào Thu ngân > Đóng ca, đối soát tổng thu và in biên bản tổng hợp.",
+          "tips": "Đối chiếu số liệu thu ngân trước khi chốt ca để tránh phải mở lại ca"
+        }
+      ],
+      "featureDetails": [
+        {
+          "name": "Dashboard Front Office",
+          "description": "Tổng hợp các KPI vận hành theo thời gian thực: occupancy, check-in, check-out, công nợ.",
+          "scenario": "Giờ cao điểm check-out cần ưu tiên phòng có cảnh báo công nợ"
+        },
+        {
+          "name": "Sơ đồ phòng realtime",
+          "description": "Theo dõi trạng thái phòng trống, bẩn, đã đặt, đang dọn và bảo trì trên một màn hình.",
+          "scenario": "Nhanh chóng gán phòng cho khách đến sớm khi housekeeping vừa cập nhật clean"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "m1-ex1",
+          "level": "Co ban",
+          "title": "Định vị giao diện trong 3 phút",
+          "objective": "Tìm đủ đúng 6 khu vực dashboard cần dùng trong ca lễ tân.",
+          "checklist": [
+            {
+              "id": "m1-ex1-c1",
+              "text": "Xác định danh sách khách đến và khách đi"
+            },
+            {
+              "id": "m1-ex1-c2",
+              "text": "Mở Room Rack và áp dụng bộ lọc theo từng tầng"
+            },
+            { "id": "m1-ex1-c3", "text": "Xem được khu vực cảnh báo công nợ" }
+          ]
+        },
+        {
+          "id": "m1-ex2",
+          "level": "Trung cap",
+          "title": "Mở ca và bàn giao mẫu",
+          "objective": "Hoàn thành đúng mẫu mở ca, ghi chú vận hành và đóng ca.",
+          "checklist": [
+            { "id": "m1-ex2-c1", "text": "Nhập số dư đầu ca" },
+            {
+              "id": "m1-ex2-c2",
+              "text": "Tạo ghi chú bàn giao có nội dung rõ ràng"
+            },
+            { "id": "m1-ex2-c3", "text": "In được báo cáo tổng kết ca" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dat-phong-reservation",
+      "name": "Bài 2: Đặt phòng và quản lý reservation",
+      "summary": "Thực hành tạo mới, sửa, hủy reservation; quản lý rooming list, giá phòng và nguồn đặt.",
+      "duration": "Buổi 2",
+      "outcomes": [
+        "Tạo booking đúng chính sách giá và số lượng khách",
+        "Xử lý thay đổi ngày ở, đổi loại phòng, hủy đặt phòng",
+        "Quản lý booking đoàn và ghi chú đặc biệt"
+      ],
+      "guideSteps": [
+        {
+          "title": "Tạo booking mới",
+          "detail": "Thao tác: 1) Vào Đặt phòng > Đặt phòng mới. 2) Nhập thông tin khách, ngày đến/ngày đi. 3) Chọn loại phòng, số lượng phòng, số người ở. 4) Chọn nguồn đặt phòng và rate plan. 5) Nhập thông tin đặt cọc nếu có và bấm Lưu.",
+          "tips": "Kiểm tra policy hoàn hủy trước khi xác nhận booking"
+        },
+        {
+          "title": "Chỉnh sửa và hủy booking",
+          "detail": "Thao tác: 1) Vào Đặt phòng > Tìm kiếm booking theo mã/tên/số điện thoại. 2) Mở booking cần sửa và bấm Chỉnh sửa. 3) Cập nhật ngày ở, loại phòng hoặc giá. 4) Nếu hủy, bấm Hủy đặt phòng, chọn lý do hủy và xác nhận.",
+          "tips": "Mọi thay đổi giá phòng cần có note phê duyệt"
+        },
+        {
+          "title": "Quản lý booking đoàn",
+          "detail": "Thao tác: 1) Vào Đặt phòng đoàn > Tạo đoàn mới. 2) Nhập tên đoàn, mã đoàn, ngày ở. 3) Tại Rooming list, import danh sách khách hoặc nhập tay. 4) Gán phòng sơ bộ theo từng hạng phòng. 5) Lưu và gửi danh sách cho bộ phận liên quan.",
+          "tips": "Dùng mã đoàn thống nhất để truy vết hóa đơn nhanh"
+        }
+      ],
+      "featureDetails": [
+        {
+          "name": "Reservation Card",
+          "description": "Nơi lưu trữ thông tin booking, giá, điều kiện thanh toán, yêu cầu đặc biệt và lịch sử cập nhật.",
+          "scenario": "Khách đổi ngày đến, lễ tân cập nhật booking mà không mất lịch sử note"
+        },
+        {
+          "name": "Rate Plan và Segment",
+          "description": "Gán giá theo kênh bán, segment khách, chương trình ưu đãi và đối tác công ty.",
+          "scenario": "Khách corporate được áp dụng giá hợp đồng và VAT policy riêng"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "m2-ex1",
+          "level": "Co ban",
+          "title": "Tạo 3 booking khác nguồn",
+          "objective": "Hoàn tất 3 reservation với 3 segment: OTA, walk-in, corporate.",
+          "checklist": [
+            { "id": "m2-ex1-c1", "text": "Nhập đúng ngày đến ngày đi" },
+            { "id": "m2-ex1-c2", "text": "Gán đúng rate plan theo segment" },
+            { "id": "m2-ex1-c3", "text": "Lưu được yêu cầu đặc biệt của khách" }
+          ]
+        },
+        {
+          "id": "m2-ex2",
+          "level": "Nang cao",
+          "title": "Xử lý thay đổi booking phức tạp",
+          "objective": "Xử lý đổi ngày ở, đổi loại phòng và hủy 1 booking mà không sai lịch sử.",
+          "checklist": [
+            { "id": "m2-ex2-c1", "text": "Cập nhật booking đổi ngày đến" },
+            { "id": "m2-ex2-c2", "text": "Đổi loại phòng và tính lại giá" },
+            { "id": "m2-ex2-c3", "text": "Hủy booking và chọn đúng lý do" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nhan-phong-checkin",
+      "name": "Bài 3: Nhận phòng (Check-in)",
+      "summary": "Quy trình check-in cho khách lẻ, khách đoàn, khách lai; cọc tiền, gán phòng và cấp khóa.",
+      "duration": "Buổi 3",
+      "outcomes": [
+        "Thực hiện check-in đầy đủ thông tin lưu trú",
+        "Gán phòng đúng trạng thái sẵn sàng",
+        "Xử lý check-in sớm, no-show và walk-in"
+      ],
+      "guideSteps": [
+        {
+          "title": "Xác thực thông tin khách",
+          "detail": "Thao tác: 1) Vào Nhận phòng > Danh sách booking đến. 2) Chọn booking và bấm Bắt đầu check-in. 3) Quét/nhập CCCD hoặc hộ chiếu. 4) Đối chiếu số người ở, quốc tịch, thông tin hóa đơn. 5) Lưu thông tin lưu trú.",
+          "tips": "Khách nước ngoài cần nhập đủ các trường tạm trú bắt buộc"
+        },
+        {
+          "title": "Gán phòng và cấp cọc",
+          "detail": "Thao tác: 1) Trong màn hình check-in bấm Chọn phòng. 2) Lọc theo Tầng/Loại phòng/Trạng thái Clean. 3) Chọn phòng và xác nhận giá bán. 4) Mở tab Đặt cọc, nhập số tiền cọc và hình thức thu. 5) Tạo folio ban đầu.",
+          "tips": "Kiểm tra giá phòng sau thuế trước khi xác nhận"
+        },
+        {
+          "title": "Hoàn tất check-in",
+          "detail": "Thao tác: 1) Bấm Hoàn tất check-in. 2) In phiếu đăng ký lưu trú. 3) Tạo và cấp khóa phòng (nếu kết nối khóa). 4) Cập nhật ghi chú yêu cầu khách. 5) Gửi trạng thái phòng đã occupied cho các bộ phận.",
+          "tips": "Khách đoàn cần in danh sách phòng theo thứ tự để bàn giao nhanh"
+        }
+      ],
+      "featureDetails": [
+        {
+          "name": "Check-in Wizard",
+          "description": "Luồng thao tác từng bước giúp lễ tân hoàn tất check-in nhanh và đúng trường dữ liệu.",
+          "scenario": "Giờ check-in cao điểm vẫn giữ tốc độ xử lý ổn định"
+        },
+        {
+          "name": "Deposit Management",
+          "description": "Quản lý tiền cọc theo phòng/khách và tự động đối trừ khi thanh toán check-out.",
+          "scenario": "Khách bổ sung cọc trong lúc lưu trú và cần đối trừ cuối kỳ"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "m3-ex1",
+          "level": "Co ban",
+          "title": "Check-in khách lẻ",
+          "objective": "Hoàn tất check-in 1 booking đã đặt trong 4 phút.",
+          "checklist": [
+            { "id": "m3-ex1-c1", "text": "Nhập đủ thông tin giấy tờ" },
+            { "id": "m3-ex1-c2", "text": "Gán phòng đúng trạng thái clean" },
+            { "id": "m3-ex1-c3", "text": "Thu và ghi nhận tiền cọc" }
+          ]
+        },
+        {
+          "id": "m3-ex2",
+          "level": "Trung cap",
+          "title": "Check-in khách đoàn 5 phòng",
+          "objective": "Xử lý check-in liên tiếp cho 5 phòng với thông tin đúng 100 phần trăm.",
+          "checklist": [
+            { "id": "m3-ex2-c1", "text": "Phân phòng đủ theo rooming list" },
+            { "id": "m3-ex2-c2", "text": "Nhập danh sách khách ở từng phòng" },
+            { "id": "m3-ex2-c3", "text": "Bàn giao khóa phòng đúng thứ tự" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luu-tru-va-folio",
+      "name": "Bài 4: Vận hành trong lưu trú và quản lý folio",
+      "summary": "Cập nhật phát sinh dịch vụ, đổi phòng, gia hạn, tách/gộp folio và xử lý tình huống trong kỳ lưu trú.",
+      "duration": "Buổi 4-5",
+      "outcomes": [
+        "Post đúng các dịch vụ phát sinh vào folio",
+        "Xử lý đổi phòng, gia hạn, cắt đêm đúng nghiệp vụ",
+        "Quản lý folio nhiều người trả và nhiều tài khoản"
+      ],
+      "guideSteps": [
+        {
+          "title": "Post dịch vụ vào folio",
+          "detail": "Thao tác: 1) Vào Lưu trú > Danh sách khách đang ở. 2) Chọn phòng và mở Folio. 3) Bấm Thêm giao dịch. 4) Chọn mã dịch vụ (mini bar, giặt là, F&B...). 5) Nhập số lượng, đơn giá, ngày hạch toán và Lưu.",
+          "tips": "Kiểm tra posting date để không sai doanh thu theo ngày"
+        },
+        {
+          "title": "Đổi phòng và gia hạn",
+          "detail": "Thao tác: 1) Mở hồ sơ lưu trú của khách. 2) Bấm Đổi phòng (Move Room). 3) Lọc phòng trống theo tầng/loại phòng và chọn phòng mới. 4) Nếu gia hạn, vào tab Lưu trú > Gia hạn, chọn số đêm thêm. 5) Xác nhận giá mới và lưu.",
+          "tips": "Kiểm tra availability trước khi move room"
+        },
+        {
+          "title": "Tách/gộp folio",
+          "detail": "Thao tác: 1) Trong Folio, chọn các dòng giao dịch cần tách. 2) Bấm Chuyển sang Folio B/C theo người trả. 3) Đặt tên folio theo đối tượng thanh toán. 4) Nếu cần gộp lại, chọn Gộp folio và xác nhận.",
+          "tips": "Đánh nhãn rõ mỗi folio để tránh thanh toán nhầm"
+        }
+      ],
+      "featureDetails": [
+        {
+          "name": "Folio Ledger",
+          "description": "Theo dõi từng dòng phát sinh, điều chỉnh, hoàn tiền và ghi chú nghiệp vụ.",
+          "scenario": "Khách tranh chấp khoản mini bar, lễ tân truy về dòng posting"
+        },
+        {
+          "name": "Room Move và Extend Stay",
+          "description": "Xử lý đổi phòng và gia hạn mà vẫn bảo toàn dữ liệu lưu trú và doanh thu.",
+          "scenario": "Phòng cũ cần bảo trì gấp, cần đổi phòng ngay cho khách đang ở"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "m4-ex1",
+          "level": "Trung cap",
+          "title": "Post 6 giao dịch phát sinh",
+          "objective": "Nhập 6 phát sinh dịch vụ mà không sai tài khoản folio.",
+          "checklist": [
+            { "id": "m4-ex1-c1", "text": "Post mini bar đúng phòng" },
+            { "id": "m4-ex1-c2", "text": "Post giặt là đúng ngày" },
+            { "id": "m4-ex1-c3", "text": "Kiểm tra tổng folio sau posting" }
+          ]
+        },
+        {
+          "id": "m4-ex2",
+          "level": "Nang cao",
+          "title": "Xử lý đổi phòng và tách folio",
+          "objective": "Đổi phòng và tách folio 2 người trả mà không sai công nợ.",
+          "checklist": [
+            { "id": "m4-ex2-c1", "text": "Move room đúng quy trình" },
+            { "id": "m4-ex2-c2", "text": "Tách folio theo yêu cầu" },
+            { "id": "m4-ex2-c3", "text": "Đối soát lại số dư sau tách" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tra-phong-thanh-toan",
+      "name": "Bài 5: Trả phòng (Check-out) và thanh toán",
+      "summary": "Đối soát folio, thu ngân nhiều phương thức, in hóa đơn và hoàn tất check-out chuẩn.",
+      "duration": "Buổi 6",
+      "outcomes": [
+        "Đối soát công nợ đầy đủ trước check-out",
+        "Xử lý thanh toán tiền mặt, thẻ, chuyển khoản, company bill",
+        "In và bàn giao hóa đơn đúng mẫu"
+      ],
+      "guideSteps": [
+        {
+          "title": "Pre check-out review",
+          "detail": "Thao tác: 1) Vào Trả phòng > Danh sách sắp check-out. 2) Mở folio phòng và đối chiếu từng dòng posting. 3) Kiểm tra giảm giá, VAT, phí dịch vụ. 4) Kiểm tra số tiền cọc đã thu và số còn phải thu.",
+          "tips": "Liên hệ bộ phận liên quan nếu có posting trễ"
+        },
+        {
+          "title": "Thực hiện thanh toán",
+          "detail": "Thao tác: 1) Bấm Thanh toán trong folio. 2) Chọn hình thức tiền mặt/thẻ/chuyển khoản/công ty. 3) Nếu chia nhiều hình thức, nhập số tiền từng phần. 4) Xác nhận giao dịch và in bill tạm.",
+          "tips": "In bill tạm để khách xác nhận trước khi finalize"
+        },
+        {
+          "title": "Hoàn tất check-out",
+          "detail": "Thao tác: 1) Bấm Check-out và xác nhận số dư = 0. 2) In hóa đơn VAT/chứng từ thanh toán. 3) Chuyển trạng thái phòng sang Dirty/Cần dọn. 4) Gửi thông báo cho housekeeping qua màn hình trạng thái phòng.",
+          "tips": "Không bỏ qua bước đối soát deposit trước đóng folio"
+        }
+      ],
+      "featureDetails": [
+        {
+          "name": "Cashier Settlement",
+          "description": "Công cụ thu ngân hỗ trợ chốt giao dịch đa phương thức và in chứng từ.",
+          "scenario": "Khách muốn chia tiền phòng và dịch vụ cho 2 người khác nhau"
+        },
+        {
+          "name": "Invoice Control",
+          "description": "Quản lý mẫu hóa đơn, thông tin VAT, lịch sử in và tái in có kiểm soát.",
+          "scenario": "Khách doanh nghiệp cần đổi thông tin công ty trước khi in hóa đơn"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "m5-ex1",
+          "level": "Trung cap",
+          "title": "Check-out 3 phòng liên tiếp",
+          "objective": "Hoàn tất 3 check-out giờ cao điểm với sai số bằng 0.",
+          "checklist": [
+            {
+              "id": "m5-ex1-c1",
+              "text": "Đối soát đầy đủ folio trước thu tiền"
+            },
+            { "id": "m5-ex1-c2", "text": "Thu tiền 2 phương thức thanh toán" },
+            { "id": "m5-ex1-c3", "text": "In hóa đơn và chốt phòng" }
+          ]
+        },
+        {
+          "id": "m5-ex2",
+          "level": "Nang cao",
+          "title": "Xử lý hoàn tiền và tái in hóa đơn",
+          "objective": "Xử lý 1 giao dịch hoàn tiền và tái in hóa đơn đúng quy trình phê duyệt.",
+          "checklist": [
+            { "id": "m5-ex2-c1", "text": "Thực hiện refund có lý do" },
+            {
+              "id": "m5-ex2-c2",
+              "text": "Tái in hóa đơn với ghi nhận lịch sử"
+            },
+            { "id": "m5-ex2-c3", "text": "Kiểm tra số dư kết ca sau refund" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "night-audit-va-bao-cao",
+      "name": "Bài 6: Night audit, khóa sổ và báo cáo",
+      "summary": "Đóng ngày vận hành, night audit, khóa sổ doanh thu và xuất báo cáo quản trị cuối ngày.",
+      "duration": "Buổi 7-8",
+      "outcomes": [
+        "Thực hiện night audit không lỗi",
+        "Khóa sổ doanh thu theo ngày đúng quy trình",
+        "Xuất và đối soát các báo cáo quản trị chính"
+      ],
+      "guideSteps": [
+        {
+          "title": "Chuẩn bị trước night audit",
+          "detail": "Thao tác: 1) Vào Night Audit > Kiểm tra điều kiện. 2) Xử lý danh sách phòng quá hạn check-out. 3) Đóng các giao dịch thu ngân đang mở. 4) Kiểm tra folio còn số dư hoặc posting trễ.",
+          "tips": "Không chạy audit khi còn folio chưa kết toán"
+        },
+        {
+          "title": "Chạy night audit",
+          "detail": "Thao tác: 1) Bấm Bắt đầu Night Audit. 2) Theo dõi từng bước khóa sổ trên progress log. 3) Xử lý lỗi nếu hệ thống cảnh báo. 4) Xác nhận chuyển Business Date sang ngày mới.",
+          "tips": "Lưu log audit để truy vết khi cần"
+        },
+        {
+          "title": "Xuất báo cáo và bàn giao",
+          "detail": "Thao tác: 1) Vào Báo cáo > Front Office. 2) Xuất báo cáo doanh thu ngày, occupancy, công nợ, cash journal. 3) Đối chiếu tổng thu với báo cáo Thu ngân. 4) Lập và in biên bản bàn giao ca.",
+          "tips": "Đối chiếu báo cáo doanh thu với tổng thu ngân trước khi ký bàn giao"
+        }
+      ],
+      "featureDetails": [
+        {
+          "name": "Night Audit Engine",
+          "description": "Tự động khóa sổ ngày và tạo dữ liệu vận hành cho ngày kế tiếp.",
+          "scenario": "Khách sạn vận hành 24/7 cần đảm bảo chuyển ngày không mất dữ liệu"
+        },
+        {
+          "name": "Management Reports",
+          "description": "Bộ báo cáo gồm doanh thu, công suất, ADR, RevPAR, công nợ và kết quả thu ngân.",
+          "scenario": "Quản lý cần tổng hợp nhanh để họp đầu ngày"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "m6-ex1",
+          "level": "Trung cap",
+          "title": "Chạy night audit mô phỏng",
+          "objective": "Thực hiện đầy đủ quy trình night audit trên bộ dữ liệu mô phỏng.",
+          "checklist": [
+            { "id": "m6-ex1-c1", "text": "Đóng hết giao dịch mở trước audit" },
+            {
+              "id": "m6-ex1-c2",
+              "text": "Chạy audit thành công không báo lỗi"
+            },
+            { "id": "m6-ex1-c3", "text": "Kiểm tra ngày kinh doanh đã chuyển" }
+          ]
+        },
+        {
+          "id": "m6-ex2",
+          "level": "Nang cao",
+          "title": "Lập bộ báo cáo tổng kết ngày",
+          "objective": "Xuất 5 báo cáo quản trị và lập biên bản bàn giao trước 15 phút.",
+          "checklist": [
+            { "id": "m6-ex2-c1", "text": "Xuất báo cáo doanh thu theo ngày" },
+            { "id": "m6-ex2-c2", "text": "Xuất báo cáo occupancy và ADR" },
+            {
+              "id": "m6-ex2-c3",
+              "text": "Lập biên bản bàn giao có đủ cảnh báo"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "criteria": [
+      "Đúng quy trình reservation check-in check-out và không bỏ sót trường bắt buộc",
+      "Đối soát folio chính xác, sai số thanh toán bằng 0",
+      "Xử lý được tình huống đổi phòng, gia hạn, tách folio và refund",
+      "Thực hiện được night audit và xuất báo cáo kết ngày"
+    ],
+    "preShiftChecklist": [
+      "Hoàn thành tất cả bài tập Cơ bản và tối thiểu 70 phần trăm bài tập Nâng cao",
+      "Đạt điểm thao tác tối thiểu 85/100 qua bài test mô phỏng",
+      "Được Trưởng lễ tân xác nhận đạt chuẩn vận hành ca độc lập"
+    ]
+  }
+}
